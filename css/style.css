@@ -6,15 +6,22 @@
     box-sizing: border-box;
 }
 
+/* Common */
+body {
+    background-color: black;
+}
+
 img {
     width: 100%;
 }
 
+/* container */
 .container {
     max-width: 990px;
     margin: auto;
 }
 
+/* slider */
 .slider {
     padding: 20px 0;
     display: flex;
@@ -22,10 +29,25 @@ img {
 }
 
 .arrow {
-    font-size: 30px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.arrow.left {
+    padding-right: 30px;
+}
+
+.arrow.right {
+    padding-left: 30px;
 }
 
 
 .images img {
     display: none;
 }
+
+.images img.active {
+    display: block;
+}
+
